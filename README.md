@@ -13,14 +13,6 @@ The video depicts a drive on a multi-lane road under clear daylight conditions. 
 
 There are no additional objects or unexpected hazards, and traffic lights at intersections are functioning correctly, guiding the flow of the vehicles.
 
-The video depicts a drive on a multi-lane road under clear daylight conditions. The road is smooth, lined with palm trees, and is free of debris. Traffic appears moderate, with several cars visible, maintaining a safe distance from each other. There are two visible hazards:
-
-1. **Traffic Density**: The road has a moderate flow of vehicles, requiring attentive driving to maintain safe spacing, particularly around stoplights and intersections.
-
-2. **Overpass**: An overpass crosses above the road, which can pose visibility challenges due to shadows and the potential for sudden traffic changes.
-
-There are no additional objects or unexpected hazards, and traffic lights at intersections are functioning correctly, guiding the flow of the vehicles.
-
 ### /hazards/Hazard_Car 6.mp4
 
 131 frames read

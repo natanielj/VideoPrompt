@@ -15,7 +15,7 @@ key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # load video
-video = cv2.VideoCapture("./hazards/Hazard_Car 6.mp4")
+video = cv2.VideoCapture("./hazards/hazard0.mp4")
 
 # read each video frames and add each frame to a list after converting to base64
 base64Frames = []
@@ -39,7 +39,7 @@ PROMPT_MESSAGES = [
     {
         "role": "user",
         "content": [
-            "These are videos of human driven cars. Generate a description of the video with all the road conditions, hazards to the car including other objects, or cars",
+            "These are videos of human driven cars. Generate a description of the video with all the road conditions, hazards to the car including other objects, or cars. Identify all possible dangers to the car and the driver. Preferably output in list form",
             *map(lambda x: {"image": x, "resize": 768}, base64Frames[0::50]),
         ],
     },

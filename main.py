@@ -1,12 +1,3 @@
-# from openai import OpenAI
-# from dotenv import load_dotenv
-
-# load_dotenv()
-
-# client = OpenAI()
-
-# import ollama
-
 from IPython.display import display, Image, Audio
 import cv2 
 import base64
@@ -17,17 +8,16 @@ import requests
 from dotenv import load_dotenv
 # import PIL import Image
 
-
+# load api key from .env file
 load_dotenv()
 
 key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# load video
+video = cv2.VideoCapture("./hazards/Hazard_Car 6.mp4")
 
-# chat = ollama.chat(model="")
-
-video = cv2.VideoCapture("./hazards/hazard0.mp4")
-
+# read each video frames and add each frame to a list after converting to base64
 base64Frames = []
 while video.isOpened():
     success, frame = video.read()
@@ -36,15 +26,15 @@ while video.isOpened():
     _, buffer = cv2.imencode(".jpg", frame)
     base64Frames.append(base64.b64encode(buffer).decode("utf-8"))
 
-video.release()
+video.release() # release/end video capture
 print(len(base64Frames), "frames read")
 
-display_handle = display(None, display_id=True)
+# Display each frame seperately in the video
 for img in base64Frames:
-    curr_frame = base64.b64decode(img.encode("utf-8"))
-    display_handle.update(Image(data=curr_frame))
+    display(Image(data=base64.b64decode(img.encode("utf-8")), format='jpeg'))
     time.sleep(0.025)
 
+# Go through each frame and generate a description of the video
 PROMPT_MESSAGES = [
     {
         "role": "user",

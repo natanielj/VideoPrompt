@@ -1,0 +1,41 @@
+annotated-types==0.7.0
+anyio==4.8.0
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+certifi==2025.1.31
+charset-normalizer==3.4.1
+colorama @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/colorama_1699472650914/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distro==1.9.0
+dotenv==0.9.9
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+h11==0.14.0
+httpcore==1.0.7
+httpx==0.28.1
+idna==3.10
+ipython @ file:///C:/b/abs_8eyhzleyrk/croot/ipython_1734548134403/work
+jedi @ file:///C:/b/abs_3a2kbnlclc/croot/jedi_1733987412687/work
+jiter==0.8.2
+matplotlib-inline @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/matplotlib-inline_1699484796387/work
+numpy==2.2.3
+ollama==0.4.7
+openai==1.64.0
+opencv-python==4.11.0.86
+parso @ file:///C:/b/abs_834b4mj92b/croot/parso_1733963322289/work
+pillow==11.1.0
+prompt-toolkit @ file:///C:/b/abs_68uwr58ed1/croot/prompt-toolkit_1704404394082/work
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+pydantic==2.10.6
+pydantic_core==2.27.2
+Pygments @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/pygments_1699474141968/work
+python-dotenv==1.0.1
+requests==2.32.3
+setuptools==75.8.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sniffio==1.3.1
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tqdm==4.67.1
+traitlets @ file:///C:/b/abs_bfsnoxl4pq/croot/traitlets_1718227069245/work
+typing_extensions==4.12.2
+urllib3==2.3.0
+wcwidth==0.2.13
+wheel==0.45.1

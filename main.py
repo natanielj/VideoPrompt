@@ -4,7 +4,7 @@ import base64
 import time
 from openai import OpenAI
 import os
-import requests
+# import requests
 from dotenv import load_dotenv
 # import PIL import Image
 
@@ -15,7 +15,7 @@ key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # load video
-video = cv2.VideoCapture("./hazards/hazard0.mp4")
+video = cv2.VideoCapture("./hazards/Hazard_Car 8.mp4")
 
 # read each video frames and add each frame to a list after converting to base64
 base64Frames = []
@@ -49,6 +49,7 @@ params = {
     "messages": PROMPT_MESSAGES,
     "max_tokens": 200,
 }
+# Define Hazard, Position of each actor
 
 result = client.chat.completions.create(**params)
 print(result.choices[0].message.content)

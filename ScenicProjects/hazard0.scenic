@@ -25,8 +25,17 @@ Based on the images provided, here's a list of road conditions and potential haz
     scenic ScenicProjects/hazard0.scenic --2d --model scenic.simulators.carla.model --simulate
 """
 
-
-## SET MAP AND MODEL (i.e. definitions of all referenceable vehicle types, road library, etc)
-param map = localPath('../assets/maps/CARLA/Town04.xodr)
-param carla_map = 'Town04'
+param map = localPath('../../scenic/Scenic/assets/maps/CARLA/Town05.xodr')
+param carla_map = 'Town05'
 model scenic.simulators.carla.model
+
+EGO_MODEL = "vehicle.chevrolet.impala"
+EGO_SPEED = 10
+EGO_BRAKING_THRESHOLD = 2
+
+LEAD_CAR_MODEL = "vehicle.toyota.prius"
+LEAD_CAR_SPEED = 10
+LEAD_BRAKING_THRESHOLD = 5
+
+BRAKE_ACTION = 0.5
+
